@@ -27,10 +27,10 @@ class NotificationActivity : AppCompatActivity() {
         }
     }
 
-    fun notificationImage():AsyncTask<String, Void, Bitmap> {
-
-
-    }
+//    fun notificationImage():AsyncTask<String, Void, Bitmap> {
+//
+//
+//    }
 
     fun showNoification(){
         var notificationId = Random.nextInt(100)
@@ -57,7 +57,8 @@ class NotificationActivity : AppCompatActivity() {
         builder.setContentText("This is content for notify")
 
         builder.setStyle(NotificationCompat.BigTextStyle().bigText("Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content"))
-
+        //builder.setStyle image
+        // Using channel_2
 
         builder.setContentIntent(pendingIntent)
         builder.setAutoCancel(true)
